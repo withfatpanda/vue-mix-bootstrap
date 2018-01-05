@@ -41,7 +41,7 @@ Override Bootstrap's variables in `./src/sass/_variables.scss`.
 
 ### Routing
 
-Build and amazing single-page app with friendly URLs, thanks to [Vue Router](https://router.vuejs.org).
+Build an amazing single-page app with friendly URLs, thanks to [Vue Router](https://router.vuejs.org).
 
 Your routes are in `./src/js/.routes.js`.
 
