@@ -1,6 +1,6 @@
 # vue-mix-bootstrap
 
-A simple Vue 2.0 app skeleton, for quick prototyping with Bootstrap 4, and easier-to-configure webpack with [Laravel Mix](https://github.com/JeffreyWay/laravel-mix). Also includes a minimal [router](https://router.vuejs.org).
+A simple Vue 2.0 app skeleton, for fast prototyping with Bootstrap 4, and easier-to-configure webpack with [Laravel Mix](https://github.com/JeffreyWay/laravel-mix). Also includes a minimal [router](https://router.vuejs.org) for single-page apps.
 
 ## Usage
 
