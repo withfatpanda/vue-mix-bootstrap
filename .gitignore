@@ -1,4 +1,9 @@
-node_modules/
+template/node_modules/
+template/dist/
+template/mix-manifest.json
+template/hot
+template/images
+template/fonts
 yarn-error.log
 yarn.lock
 package.lock

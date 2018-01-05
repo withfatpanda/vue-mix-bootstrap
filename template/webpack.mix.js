@@ -1,4 +1,4 @@
-let mix = require('laravel-mix');
+const mix = require('laravel-mix'), src = __dirname + '/src/js';
 
 /*
  |--------------------------------------------------------------------------
@@ -11,9 +11,30 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'dist/')
-   .sass('resources/assets/sass/app.scss', 'dist/')
-   .copy('resources/assets/img/**/*', 'dist/assets/img');
+mix
+  .js('src/js/main.js', 'dist/')
+  .sass('src/sass/style.scss', 'dist/')
+  .webpackConfig({
+    resolve: {
+      extensions: ['.js', '.vue', '.json'],
+      alias: {
+        '@': src
+      }
+    },
+    module: {
+      rules: [
+        {
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          enforce: 'pre',
+          include: [src],
+          options: {
+            formatter: require('eslint-friendly-formatter')
+          }
+        }
+      ]
+    }
+  });
 
 // Full API
 // mix.js(src, output);
